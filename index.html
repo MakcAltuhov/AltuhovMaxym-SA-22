@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GidAltuhovMax</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- Тут підключив все що в папці блоки -->
+    <link rel="stylesheet" href="./css/blocks/btn.css">
+    <link rel="stylesheet" href="./css/blocks/header.css">
+    <link rel="stylesheet" href="./css/blocks/home.css">
+    <link rel="stylesheet" href="./css/blocks/how-it-works.css">
+    <link rel="stylesheet" href="./css/blocks/story.css">
+    <link rel="stylesheet" href="./css/blocks/product.css">
+    <link rel="stylesheet" href="./css/blocks/card.css">
+    <link rel="stylesheet" href="./css/blocks/avatar.css">
+    <link rel="stylesheet" href="./css/blocks/footer.css">
+    <link rel="stylesheet" href="./css/blocks/mobile-nav-button.css">
+    <link rel="stylesheet" href="./css/blocks/mobile-nav.css">
+    <link rel="stylesheet" href="./css/blocks/form.css">
+    <!-- Тут я підключив шрифти-->
+    <link rel="stylesheet" href="./css/fonts/Georgia/stylesheet.css">
+    <link rel="stylesheet" href="./css/fonts/Lato/stylesheet.css">
+</head>
+<body>
+    <!-- Тут я працював над хедером верхня частина де в мене навігація і логотип -->
+    <header class="header">
+        <div class="container">
+            <div class="header-row">
+                <div class="header-logo"><img src="./img/logo.svg" alt="Logo"></div>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="#">Походи</a></li>
+                        <li><a href="#">Відгуки</a></li>
+                        <li><a href="#">Ком'юніті</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button type="button" class="mobile-nav-button">
+                <span class="mobile-nav-button__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <img class="mobile-nav-logo" src="./img/logo.svg" alt="Logo">
+
+        <nav class="mobile-nav-list">
+            <ul>
+                <li><a href="#">Походи</a></li>
+                <li><a href="#">Відгуки</a></li>
+                <li><a href="#">Ком'юніті</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </div>
+<!-- Тут над сторінкою хом чому хом бо таку назву як ad наприклад блокують -->
+    <main>
+        <section class="home">
+            <div class="container">
+                <div class="home-content">
+                    <h1 class="home-heading">Відкрий для себе Карпати</h1>
+                    <div class="home-text">
+                        <p>
+                            Персональний гід по Карпатам Максим Алтухов.
+                            Забеспечить хороший настрій і чудовий супровід та 
+                            нагляд над усією групою
+                        </p>
+                    </div>
+                    <!-- Тут я написав клас для кнопки -->
+                    <div class="home-btn">
+                        <a href="#" class="btn btn-big">Залишити заявку</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Тут у нас заповнення заднього фону картинкою для цього і є Cover -->
+            <div class="home-bg-img">
+                <img src="./img/home.jpg" alt="Background cover">
+            </div>
+        </section>
+<!-- Тту блок чому так працює працював знову ж таки з контейнером -->
+        <section class="how-it-works">
+            <div class="container">
+                <div class="how-it-works-header">
+                    <div class="how-it-works-header-head">
+                        <h2 class="how-it-works-title"> Чому варто з нами подорожувати? </h2>
+                        <h3 class="how-it-works-subtitle">
+                            Нам дуже часто задають це питань.
+                            Тож ось статистика.
+                        </h3>
+                    </div>
+                    <div class="how-it-works-header-content">
+                        <p>
+                            87% учасників приходять до нас по рекомендації друзів.
+                            А кожен 4 подорожує з нами більше 3 раз.
+                            А це говорить про те, що наші мандрівники вже як сім’я, тут можна знайти друзів, колег, пару, та провести грано час.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="how-it-works-steps">
+                    <div class="step">
+                        <!-- data-number="01": Це атрибут data-number, який може містити користувацькі дані, 
+                            що не впливають на відображення сторінки, але можуть бути використані для JavaScript або CSS -->
+                        <h4 class="step-heading" data-number="01">Гори Карпати</h4>
+
+                        <div class="step-text">
+                            <p> є одним із базових тегів в мові розмітки HTML
+                                 і використовується для відображення текстового абзацу або абзаців на веб-сторінці. 
+                            <p>
+                                Вражають своєю неперевершеною природною красою. 
+                                Вони пропонують мандрівникам безмежні можливості для активного відпочинку, 
+                                включаючи величезну кількість стежок для пішохідних прогулянок
+                            </p>
+                        </div>
+
+                        <div class="step-img-wrapper">
+                            <img class="step-img" src="./img/imgstep1.jpg" alt="Step Img">
+                        </div>
+                    </div>
+                    
+
+                    <div class="step">
+                        <h4 class="step-heading" data-number="02">Озера</h4>
+
+                        <div class="step-text">
+                            <p>
+                                Карпати славляться своєю багатою кількістю природних озер, які розсіяні по всьому гірському ланцюзі. 
+                                Ці озера мають надзвичайно чисту воду.
+                            </p>
+                        </div>
+
+                        <div class="step-img-wrapper">
+                            <img class="step-img" src="./img/imgstep2.jpg" alt="Step Img">
+                        </div>
+                    </div>
+                    
+
+                    <div class="step">
+                        <h4 class="step-heading" data-number="03">Водоспади</h4>
+
+                        <div class="step-text">
+                            <p>
+                                Ці природні дива приваблюють подорожніх своєю містичною красою 
+                                а буйною річковою водою, яка обприскує оточуючі ліси і скелі.
+                            </p>
+                        </div>
+
+                        <div class="step-img-wrapper">
+                            <img class="step-img" src="./img/imgstep3.png" alt="Step Img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story">
+            <div class="container container-wide">
+                <div class="story-row">
+
+                    <div class="story-content">
+                        <h2 class="story-heading">Надихнись відеом з карпат!</h2>
+                        <div class="story-text">
+                            <p>Подивись, які краєвиди карпат тебе чекають</p>
+                        </div>
+                        <div class="story-btn">
+                            <!-- #вказує на те, що посилання не веде до реальної сторінки або URL,
+                             а замість цього воно вказує на поточну сторінку або "заглушку" (знак "#"), яка не веде нікуди. -->
+                            <a href="#" class="btn btn-big">Поїхали</a>
+                        </div>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="container">
+                <div class="product-row">
+                    <div class="product-img-wrapper">
+                        <img src="./img/focused_508555716-stock-photo-cheerful-young-girlfriends-taking-self.jpg" alt="" class="product-img">
+
+                        <div class="product-card">
+                            <div class="card">
+                                <h3 class="card-title">Спілкування</h3>
+
+                                <div class="card-avatar">
+                                    <div class="avatar">
+                                        <img class="avatar-img" src="./img/gratis-png-emoticono-de-emoji-sonrojandose-emoji.png" alt="Avatar">
+                                        <h4 class="avatar-name">Весела компанія</h4>
+                                    </div>
+                                </div>
+
+                                <div class="card-contents">
+                                    <h3 class="card-contents-title">Похід в гори</h3>
+                                    <!-- Ну типу я тут задаю список -->
+                                    <ul>
+                                        <li>Зниження стресу</li>
+                                        <li>Фізична активність</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-content">
+                        <h2 class="product-content-title">Наш плюс</h2>
+                        <h3 class="product-content-subtitle">
+                            Якщо ви стресуєте, то гори і весела компанія вас врятують.
+                        </h3>
+
+                        <div class="product-content-text">
+                            <p>
+                                Фізична активність: Активності, пов'язані з горами, такі як піші прогулянки, скелелазіння або гірський туризм, можуть збільшити рівень фізичної активності.
+                                 Фізична активність відома своїми антистресовими властивостями та може допомогти знизити рівень стресу та покращити емоційний стан.
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prices">
+        <div class="video-fon">
+             <video muted autoplay loop>
+              <source src="video/coverr-remnants-of-snow-on-mountains-6750-1080p.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video> 
+        </div>
+        <div id="prices">
+            <div class="price_block">
+                <table>
+                    <tr><td class="even_td"><p>Неймовірна подорож по найпрекраснішим карпатам з гідами, найвеселіші вечірки та найцікавіше спілкування</p></td></tr>
+                    <tr><td><p class="option">Славське</p></thd></tr>
+                    <tr><td><p class="option">1-2 ночі</p></td></tr>
+                    <tr><td><p class="option">2-разове харчування</p></td></tr>
+                    <tr><th><h1>5000 грн</h1></th></tr>
+                    <tr><td class="option-button"><button>Замовити</button></td></tr>
+                </table>
+            </div>
+            
+            <div class="price_block">
+                <table>
+                    <tr><td class="even_td"><p>Неймовірна подорож по найпрекраснішим карпатам з гідами, найвеселіші вечірки та найцікавіше спілкування </p></td></tr>
+                    <tr><td><p class="option">Драгобрат</p></thd></tr>
+                    <tr><td><p class="option">2-3 ночі</p></td></tr>
+                    <tr><td><p class="option">2-разове харчування</p></td></tr>
+                    <tr><th><h1>7000 грн</h1></th></tr>
+                    <tr><td class="option-button"><button>Замовити</button></td></tr>
+                </table>
+            </div>
+
+            <div class="price_block">
+                <table>
+                    <tr><td class="even_td"><p>Неймовірна подорож по найпрекраснішим карпатам з гідами, найвеселіші вечірки та найцікавіше спілкування</p></td></tr>
+                    <tr><td><p class="option">Буковель</p></thd></tr>
+                    <tr><td><p class="option">2-3 ночі</p></td></tr>
+                    <tr><td><p class="option">3-разове харчування</p></td></tr>
+                    <tr><th><h1>10000 грн</h1></th></tr>
+                    <tr><td class="option-button"><button>Замовити</button></td></tr>
+                </table>
+            </div>
+        </div>
+        </section>
+
+
+        <section class="form-container">
+            <h1>Напишіть нам</h1>
+            <form>
+                <div class="name-email">
+                    <input type="text" name="name" placeholder="Ваше ім'я">
+                    <input type="email" name="email"  placeholder="Ваш email">
+                </div>
+                <textarea rows="4" placeholder="Ваші фантазії..."></textarea>
+                <button type="button">Надіслати</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img class="footer-logo" src="./img/logo.svg" alt="Logo">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">Походи</a></li>
+                        <li><a href="#">Відгуки</a></li>
+                        <li><a href="#">Ком'юніті</a></li>
+                        <li><a href="#">Контакти</a></li>
+                     </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+
+
+</body></html>

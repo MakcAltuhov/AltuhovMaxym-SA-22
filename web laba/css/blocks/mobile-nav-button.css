@@ -1,0 +1,72 @@
+.mobile-nav-button {
+	/* Reset for button */
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	background: transparent;
+
+	/* Стилі іконок навігації*/
+	position: absolute;
+	z-index: 999;
+	width: 40px;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+	top: 33px;
+	right: 20px;
+    display: none;
+}
+/* display: flex;: Ця властивість встановлює елемент у режим Flexbox. У режимі Flexbox, дочірні елементи контейнера розташовані в одному ряду (або колонці),
+ і їх розташування і розміри можуть бути легко керовані за допомогою різних властивостей Flexbox, таких як justify-content, align-items, flex-direction і інші. */
+@media (max-width: 529px){
+    .mobile-nav-button {
+        display: flex;
+    }
+}
+
+.mobile-nav-button__icon {
+	display: block;
+	position: relative;
+	width: 40px;
+	height: 5px;
+	background-color: #000;
+}
+
+.mobile-nav-button__icon::after,
+.mobile-nav-button__icon::before {
+	position: absolute;
+	content: '';
+	width: 40px;
+	height: 5px;
+	background-color: #000;
+    /* трансфорсмація при закриті */
+	transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon::before {
+	right: 0;
+	top: -10px;
+}
+
+.mobile-nav-button__icon::after {
+	right: 0;
+	top: 10px;
+}
+
+.mobile-nav-button__icon.active {
+	background-color: transparent;
+}
+
+.mobile-nav-button__icon.active::before {
+	transform: rotate(45deg);
+	top: 0;
+    /* трансформація при відкриті */
+	transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon.active::after {
+	transform: rotate(-45deg);
+	top: 0;
+    /* трансформація при відкриті */
+	transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}

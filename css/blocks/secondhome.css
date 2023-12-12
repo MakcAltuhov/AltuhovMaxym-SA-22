@@ -1,0 +1,12 @@
+.secondhome {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 275px ;
+    padding-right: 254px;
+    padding-top: 162px;
+    padding-bottom: 8px
+}
+.barabara{
+    margin-left: 254px;
+}
+/* зовнішній відступ */
